@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_stat_3 = function(feature, resolution){
+var style_fylker_3 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -21,8 +21,8 @@ var style_stat_3 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 6.0 + size,
-            stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(14,220,189,1.0)'})}),
+        image: new ol.style.Circle({radius: 4.4 + size,
+            stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0}), fill: new ol.style.Fill({color: 'rgba(251,243,4,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
